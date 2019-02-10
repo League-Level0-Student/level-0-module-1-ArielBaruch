@@ -24,10 +24,12 @@ ellipse(500,489,440,440);
 
 PImage pepperoni = loadImage("pepperoni.ppm.gif");
 pepperoni.resize(40, 40);
+
 image(pepperoni, 600, 600);
 
 if(mousePressed){
   image(pepperoni, mouseX, mouseY);
+
 sound.play();
 sound.rewind();
 }
